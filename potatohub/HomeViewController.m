@@ -1,18 +1,18 @@
 //
-//  FirstViewController.m
+//  HomeViewController.m
 //  potatohub
 //
 //  Created by Yan Gao on 7/7/15.
 //  Copyright (c) 2015 ___THOUGHTWORKS___. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "HomeViewController.h"
 
-@interface FirstViewController ()
+@interface HomeViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation HomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

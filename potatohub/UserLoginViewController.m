@@ -1,20 +1,22 @@
 //
-//  AboutMeViewController.m
+//  UserLoginViewController.m
 //  potatohub
 //
-//  Created by Yan Gao on 7/9/15.
+//  Created by Yan Gao on 7/13/15.
 //  Copyright (c) 2015 ___THOUGHTWORKS___. All rights reserved.
 //
 
-#import "AboutMeViewController.h"
+#import "UserLoginViewController.h"
 
-@interface AboutMeViewController ()
-@property (weak, nonatomic) IBOutlet UIImageView *avatar;
-@property (weak, nonatomic) IBOutlet UIButton *clickLogin;
+@interface UserLoginViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *userName;
+@property (weak, nonatomic) IBOutlet UITextField *password;
+@property (weak, nonatomic) IBOutlet UIButton *signInButton;
+@property (weak, nonatomic) IBOutlet UIButton *registerButton;
 
 @end
 
-@implementation AboutMeViewController
+@implementation UserLoginViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -35,11 +37,12 @@
     // Pass the selected object to the new view controller.
 }
 */
-- (IBAction)userClickLogin:(id)sender {
-    if (sender) {
-        [self performSegueWithIdentifier:@"userLoginSegue" sender:sender];
+- (IBAction)userClickLogRegButton:(id)sender {
+    if ([((UIButton *)sender).titleLabel.text  isEqual: @"注册"]) {
+        [self performSegueWithIdentifier:@"userRegisterSegue" sender:sender];
+    } else {
+        //TODO: user login process.
     }
 }
-
 
 @end

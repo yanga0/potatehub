@@ -1,18 +1,18 @@
 //
-//  SecondViewController.m
+//  GroupsViewController.m
 //  potatohub
 //
 //  Created by Yan Gao on 7/7/15.
 //  Copyright (c) 2015 ___THOUGHTWORKS___. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "GroupsViewController.h"
 
-@interface SecondViewController ()
+@interface GroupsViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation GroupsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  GroupsViewController.h
 //  potatohub
 //
 //  Created by Yan Gao on 7/7/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface GroupsViewController : UIViewController
 
 
 @end

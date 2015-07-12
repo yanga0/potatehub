@@ -3,9 +3,10 @@
 
 target 'potatohub' do
     pod "Qiniu", "~> 7.0"
+    pod "AVOSCloud"
 end
 
 target 'potatohubTests' do
-
+    pod "AVOSCloud"
 end
 

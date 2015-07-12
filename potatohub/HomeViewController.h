@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  HomeViewController.h
 //  potatohub
 //
 //  Created by Yan Gao on 7/7/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface HomeViewController : UIViewController
 
 
 @end
