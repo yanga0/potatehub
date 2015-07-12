@@ -7,6 +7,7 @@
 //
 
 #import "UserLoginViewController.h"
+#import <AVUser.h>
 
 @interface UserLoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *userName;
@@ -41,7 +42,16 @@
     if ([((UIButton *)sender).titleLabel.text  isEqual: @"注册"]) {
         [self performSegueWithIdentifier:@"userRegisterSegue" sender:sender];
     } else {
-        //TODO: user login process.
+        NSString *username = self.userName.text;
+        NSString *password = self.password.text;
+        [AVUser logInWithUsernameInBackground:username password:password block:^(AVUser *user, NSError *error) {
+            if (user != nil) {
+                NSLog(@"hoho!");
+                [[self navigationController] popViewControllerAnimated:YES];
+            } else {
+                
+            }
+        }];
     }
 }
 

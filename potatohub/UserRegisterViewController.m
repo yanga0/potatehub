@@ -41,24 +41,32 @@
 }
 */
 - (IBAction)clickRegister:(id)sender {
+    NSString *default_avatar = @"http://some_img_url";
     if ([((UIButton *)sender).titleLabel.text isEqualToString:@"立即注册"]) {
         NSString *username = self.userName.text;
         NSString *password = self.password.text;
         NSString *passwordConfirm = self.passConfirm.text;
         NSString *email = self.mail.text;
         BOOL rulesChecked = self.rulesAccepted.on;
-        AVUser *newUser = [AVUser user];
-        newUser.username = username;
-        newUser.password = password;
-        newUser.email = email;
-        [newUser setObject:[NSNumber numberWithBool:rulesChecked] forKey:@"userConditions"];
-        [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-            if (succeeded) {
-                //TODO: login with registered account
-            } else {
-                //TODO: handle errors
-            }
-        }];
+        if (rulesChecked && [password isEqual:passwordConfirm]) {
+            AVUser *newUser = [AVUser user];
+            newUser.username = username;
+            newUser.password = password;
+            newUser.email = email;
+            [newUser setObject:[NSNumber numberWithBool:rulesChecked] forKey:@"userConditions"];
+            [newUser setObject:default_avatar forKey:@"avatar"];
+            [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                if (succeeded) {
+                    //TODO: login with registered account
+                } else {
+                    //TODO: handle errors
+                }
+            }];
+        } else {
+            [self.passConfirm setBorderStyle:UITextBorderStyleRoundedRect];
+            [self.passConfirm.layer setBorderColor:[[UIColor redColor] CGColor]];
+            [self.passConfirm becomeFirstResponder];
+        }
     }
 }
 
