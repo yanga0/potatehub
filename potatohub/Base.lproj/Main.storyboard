@@ -70,7 +70,7 @@
                                             <action selector="userClickLogin:" destination="G7p-x0-9ZU" eventType="touchUpInside" id="KrD-A5-X1R"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="128" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="T2Z-qD-5AI">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="128" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="T2Z-qD-5AI">
                                         <rect key="frame" x="156" y="30" width="64" height="64"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="64" id="AqJ-WY-GOD"/>
@@ -79,7 +79,6 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="9Zi-NP-8Zt"/>
                                     <constraint firstItem="Xve-kA-4vv" firstAttribute="top" secondItem="T2Z-qD-5AI" secondAttribute="bottom" constant="15" id="OjT-VT-7pW"/>
@@ -321,31 +320,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="go"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已阅读并同意" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6a-z8-cJr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="已阅读并同意" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6a-z8-cJr">
                                 <rect key="frame" x="102" y="355" width="96" height="19.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWt-qd-nNk">
-                                <rect key="frame" x="198" y="349.5" width="164" height="30.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" none="YES" link="YES"/>
-                                    <bool key="isElement" value="YES"/>
-                                </accessibility>
-                                <attributedString key="attributedText">
-                                    <fragment content="《薯条圈用户使用协议》">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="STHeitiSC-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <dataDetectorType key="dataDetectorTypes" link="YES" calendarEvent="YES"/>
-                            </textView>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SGn-hn-nMI">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SGn-hn-nMI">
                                 <rect key="frame" x="48" y="349" width="51" height="31"/>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnv-CK-exy">
@@ -357,6 +338,24 @@
                                     <action selector="clickRegister:" destination="eeD-5N-c0b" eventType="touchUpInside" id="m8Y-81-ul4"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWt-qd-nNk">
+                                <rect key="frame" x="198" y="348.5" width="145" height="30.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" link="YES" staticText="YES"/>
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <attributedString key="attributedText">
+                                    <fragment content="《薯条圈用户使用协议》">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingMiddle" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.059999998658895493"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES" calendarEvent="YES"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -373,12 +372,13 @@
                             <constraint firstItem="w6a-z8-cJr" firstAttribute="centerY" secondItem="SGn-hn-nMI" secondAttribute="centerY" id="VJF-0u-dZF"/>
                             <constraint firstItem="ror-rq-xnq" firstAttribute="leading" secondItem="MHg-Gh-Mmq" secondAttribute="leading" id="VXJ-KL-KxY"/>
                             <constraint firstItem="8Y3-5q-2VW" firstAttribute="width" secondItem="MHg-Gh-Mmq" secondAttribute="width" id="ZX0-qv-t5Q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NWt-qd-nNk" secondAttribute="trailing" constant="16" id="geB-Hd-rL8"/>
                             <constraint firstItem="tnv-CK-exy" firstAttribute="leading" secondItem="cHp-v8-WxY" secondAttribute="leadingMargin" constant="32" id="hlE-Ko-7ev"/>
                             <constraint firstItem="SGn-hn-nMI" firstAttribute="top" secondItem="cEk-pr-t0j" secondAttribute="bottom" constant="30" id="ioN-J5-ZBZ"/>
                             <constraint firstItem="8Y3-5q-2VW" firstAttribute="width" secondItem="cEk-pr-t0j" secondAttribute="width" id="maK-Uf-SeI"/>
                             <constraint firstItem="ror-rq-xnq" firstAttribute="leading" secondItem="8Y3-5q-2VW" secondAttribute="leading" id="ptB-wL-W6R"/>
                             <constraint firstItem="cEk-pr-t0j" firstAttribute="top" secondItem="8Y3-5q-2VW" secondAttribute="bottom" constant="30" id="qBb-GV-qIF"/>
-                            <constraint firstItem="NWt-qd-nNk" firstAttribute="centerY" secondItem="w6a-z8-cJr" secondAttribute="centerY" id="tLc-T7-tKM"/>
+                            <constraint firstItem="NWt-qd-nNk" firstAttribute="centerY" secondItem="w6a-z8-cJr" secondAttribute="centerY" constant="-1" id="tLc-T7-tKM"/>
                             <constraint firstItem="w6a-z8-cJr" firstAttribute="leading" secondItem="SGn-hn-nMI" secondAttribute="trailing" constant="5" id="um5-UG-zYp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tnv-CK-exy" secondAttribute="trailing" constant="32" id="yaS-Dg-raO"/>
                         </constraints>
@@ -391,6 +391,7 @@
                         <outlet property="password" destination="MHg-Gh-Mmq" id="hQH-2T-ViU"/>
                         <outlet property="registerButton" destination="tnv-CK-exy" id="4FZ-ju-ShY"/>
                         <outlet property="rulesAccepted" destination="SGn-hn-nMI" id="oB9-ga-08F"/>
+                        <outlet property="rulesLink" destination="NWt-qd-nNk" id="ROx-si-kW6"/>
                         <outlet property="userName" destination="ror-rq-xnq" id="CUi-Qc-ssf"/>
                     </connections>
                 </viewController>

@@ -7,6 +7,7 @@
 //
 
 #import "AboutMeViewController.h"
+#import "AFNetworking/UIImageView+AFNetworking.h"
 
 @interface AboutMeViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *avatar;
@@ -19,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self.avatar setImageWithURL:[NSURL URLWithString:@"http://www.iconpng.com/png/ios7_icons/user_male.png"]];
 }
 
 - (void)didReceiveMemoryWarning {

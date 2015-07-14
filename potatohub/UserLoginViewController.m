@@ -46,7 +46,6 @@
         NSString *password = self.password.text;
         [AVUser logInWithUsernameInBackground:username password:password block:^(AVUser *user, NSError *error) {
             if (user != nil) {
-                NSLog(@"hoho!");
                 [[self navigationController] popViewControllerAnimated:YES];
             } else {
                 

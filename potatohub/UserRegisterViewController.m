@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *mail;
 @property (weak, nonatomic) IBOutlet UISwitch *rulesAccepted;
 @property (weak, nonatomic) IBOutlet UIButton *registerButton;
+@property (weak, nonatomic) IBOutlet UITextView *rulesLink;
 
 @end
 
@@ -23,7 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view.    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,6 +41,7 @@
     // Pass the selected object to the new view controller.
 }
 */
+
 - (IBAction)clickRegister:(id)sender {
     NSString *default_avatar = @"http://some_img_url";
     if ([((UIButton *)sender).titleLabel.text isEqualToString:@"立即注册"]) {
