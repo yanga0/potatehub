@@ -8,6 +8,7 @@
 
 #import "AboutMeViewController.h"
 #import "AFNetworking/UIImageView+AFNetworking.h"
+#import "AppDelegate.h"
 
 @interface AboutMeViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *avatar;
@@ -19,10 +20,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the vie0w.
-//    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.tableView.bounds.size.width, self.tableView.bounds.size.height)];
-//    self.tableView.tableHeaderView = headerView;
     [self.avatar setImageWithURL:[NSURL URLWithString:@"http://www.iconpng.com/png/ios7_icons/user_male.png"]];
+    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    if (![delegate.currentUser isEqual:nil]) {
+        AVUser *user = delegate.currentUser;
+        [self.avatar setImageWithURL:[NSURL URLWithString: (NSString *)[user objectForKey:@"avatar"]]];
+        self.clickLogin.titleLabel.text = user.username;
+    }
 }
 
 - (void)didReceiveMemoryWarning {

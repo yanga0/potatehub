@@ -8,6 +8,7 @@
 
 #import "UserLoginViewController.h"
 #import <AVUser.h>
+#import "AppDelegate.h"
 
 @interface UserLoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *userName;
@@ -46,6 +47,8 @@
         NSString *password = self.password.text;
         [AVUser logInWithUsernameInBackground:username password:password block:^(AVUser *user, NSError *error) {
             if (user != nil) {
+                AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+                delegate.currentUser = user;
                 [[self navigationController] popViewControllerAnimated:YES];
             } else {
                 
