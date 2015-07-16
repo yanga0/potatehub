@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GroupsViewController : UIViewController
+@interface GroupsViewController : UITableViewController
 
 
 @end

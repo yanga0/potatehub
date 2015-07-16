@@ -11,7 +11,6 @@
 @interface GroupsViewController ()
 
 @end
-
 @implementation GroupsViewController
 
 - (void)viewDidLoad {

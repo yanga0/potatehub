@@ -15,6 +15,13 @@
 		3329824F1B4BCB2D00F69E43 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3329824E1B4BCB2D00F69E43 /* Images.xcassets */; };
 		332982521B4BCB2D00F69E43 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 332982501B4BCB2D00F69E43 /* LaunchScreen.xib */; };
 		3329825E1B4BCB2D00F69E43 /* potatohubTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3329825D1B4BCB2D00F69E43 /* potatohubTests.m */; };
+		334D606E1B57CCF200BE6DF3 /* user_male.png in Resources */ = {isa = PBXBuildFile; fileRef = 334D606B1B57CCF200BE6DF3 /* user_male.png */; };
+		334D60701B57FA7800BE6DF3 /* Home-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 334D606F1B57FA7800BE6DF3 /* Home-32.png */; };
+		334D60721B57FAAE00BE6DF3 /* Broadcast-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 334D60711B57FAAE00BE6DF3 /* Broadcast-32.png */; };
+		334D60741B57FB4800BE6DF3 /* User Group-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 334D60731B57FB4800BE6DF3 /* User Group-32.png */; };
+		334D60761B57FBE200BE6DF3 /* User-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 334D60751B57FBE200BE6DF3 /* User-32.png */; };
+		334D607A1B580E9600BE6DF3 /* List-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 334D60791B580E9600BE6DF3 /* List-48.png */; };
+		334D607C1B5812E800BE6DF3 /* File_add-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 334D607B1B5812E800BE6DF3 /* File_add-48.png */; };
 		335FAB4C1B4E05B00042BF37 /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 335FAB4B1B4E05B00042BF37 /* AboutMeViewController.m */; };
 		335FAB4D1B4E05B00042BF37 /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 335FAB4B1B4E05B00042BF37 /* AboutMeViewController.m */; };
 		3369F8E41B52DF930095070A /* UserLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3369F8E31B52DF930095070A /* UserLoginViewController.m */; };
@@ -51,6 +58,13 @@
 		332982571B4BCB2D00F69E43 /* potatohubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = potatohubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3329825C1B4BCB2D00F69E43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3329825D1B4BCB2D00F69E43 /* potatohubTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = potatohubTests.m; sourceTree = "<group>"; };
+		334D606B1B57CCF200BE6DF3 /* user_male.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = user_male.png; path = ../../../Downloads/user_male.png; sourceTree = "<group>"; };
+		334D606F1B57FA7800BE6DF3 /* Home-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Home-32.png"; path = "../../../Downloads/Home-32.png"; sourceTree = "<group>"; };
+		334D60711B57FAAE00BE6DF3 /* Broadcast-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Broadcast-32.png"; path = "../../../Downloads/Broadcast-32.png"; sourceTree = "<group>"; };
+		334D60731B57FB4800BE6DF3 /* User Group-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "User Group-32.png"; path = "../../../Downloads/User Group-32.png"; sourceTree = "<group>"; };
+		334D60751B57FBE200BE6DF3 /* User-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "User-32.png"; path = "../../../Downloads/User-32.png"; sourceTree = "<group>"; };
+		334D60791B580E9600BE6DF3 /* List-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "List-48.png"; path = "../../../Downloads/List-48.png"; sourceTree = "<group>"; };
+		334D607B1B5812E800BE6DF3 /* File_add-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "File_add-48.png"; path = "../../../Downloads/File_add-48.png"; sourceTree = "<group>"; };
 		335FAB4A1B4E05B00042BF37 /* AboutMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutMeViewController.h; sourceTree = "<group>"; };
 		335FAB4B1B4E05B00042BF37 /* AboutMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMeViewController.m; sourceTree = "<group>"; };
 		3369F8E21B52DF930095070A /* UserLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLoginViewController.h; sourceTree = "<group>"; };
@@ -128,6 +142,13 @@
 				332982481B4BCB2D00F69E43 /* GroupsViewController.h */,
 				332982491B4BCB2D00F69E43 /* GroupsViewController.m */,
 				3329824B1B4BCB2D00F69E43 /* Main.storyboard */,
+				334D607B1B5812E800BE6DF3 /* File_add-48.png */,
+				334D60791B580E9600BE6DF3 /* List-48.png */,
+				334D60751B57FBE200BE6DF3 /* User-32.png */,
+				334D60731B57FB4800BE6DF3 /* User Group-32.png */,
+				334D60711B57FAAE00BE6DF3 /* Broadcast-32.png */,
+				334D606F1B57FA7800BE6DF3 /* Home-32.png */,
+				334D606B1B57CCF200BE6DF3 /* user_male.png */,
 				3369F8E51B52E3450095070A /* UserRegisterViewController.h */,
 				3369F8E61B52E3450095070A /* UserRegisterViewController.m */,
 				3369F8E21B52DF930095070A /* UserLoginViewController.h */,
@@ -263,8 +284,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				334D60721B57FAAE00BE6DF3 /* Broadcast-32.png in Resources */,
+				334D60701B57FA7800BE6DF3 /* Home-32.png in Resources */,
+				334D60741B57FB4800BE6DF3 /* User Group-32.png in Resources */,
+				334D607C1B5812E800BE6DF3 /* File_add-48.png in Resources */,
 				3329824D1B4BCB2D00F69E43 /* Main.storyboard in Resources */,
 				332982521B4BCB2D00F69E43 /* LaunchScreen.xib in Resources */,
+				334D606E1B57CCF200BE6DF3 /* user_male.png in Resources */,
+				334D60761B57FBE200BE6DF3 /* User-32.png in Resources */,
+				334D607A1B580E9600BE6DF3 /* List-48.png in Resources */,
 				3329824F1B4BCB2D00F69E43 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
