@@ -76,6 +76,7 @@
                     AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
                     delegate.currentUser = newUser;
                     //TODO: go to about me controller
+                    [self.navigationController popToRootViewControllerAnimated:YES];
                 } else {
                     [self.view makeToast:error.localizedDescription duration: 2.0 position:[NSValue valueWithCGPoint:self.password.center]];
                     return;

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface AboutMeViewController : UITableViewController
-
+- (void) syncUserData;
 @end

@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 
 @interface HomeViewController ()
+@property (weak, nonatomic) IBOutlet UIScrollView *slider;
 
 @end
 
@@ -17,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [self.view sendSubviewToBack:self.slider];
 }
 
 - (void)didReceiveMemoryWarning {

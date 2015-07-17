@@ -21,12 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.avatar setImageWithURL:[NSURL URLWithString:@"http://www.iconpng.com/png/ios7_icons/user_male.png"]];
-    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-    if (![delegate.currentUser isEqual:nil]) {
-        AVUser *user = delegate.currentUser;
-        [self.avatar setImageWithURL:[NSURL URLWithString: (NSString *)[user objectForKey:@"avatar"]]];
-        self.clickLogin.titleLabel.text = user.username;
-    }
+    [self syncUserData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,6 +41,15 @@
 - (IBAction)userClickLogin:(id)sender {
     if (sender) {
         [self performSegueWithIdentifier:@"userLoginSegue" sender:sender];
+    }
+}
+
+- (void) syncUserData {
+    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    if (delegate.currentUser) {
+        AVUser *user = delegate.currentUser;
+        [self.avatar setImageWithURL:[NSURL URLWithString: (NSString *)[user objectForKey:@"avatar"]]];
+        self.clickLogin.titleLabel.text = user.username;
     }
 }
 

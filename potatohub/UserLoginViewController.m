@@ -7,6 +7,7 @@
 //
 
 #import "UserLoginViewController.h"
+#import "AboutMeViewController.h"
 #import <AVUser.h>
 #import "AppDelegate.h"
 
@@ -30,15 +31,15 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    [(AboutMeViewController *)[segue destinationViewController] syncUserData];
 }
-*/
+
 - (IBAction)userClickLogRegButton:(id)sender {
     if ([((UIButton *)sender).titleLabel.text  isEqual: @"注册"]) {
         [self performSegueWithIdentifier:@"userRegisterSegue" sender:sender];
@@ -49,7 +50,7 @@
             if (user != nil) {
                 AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
                 delegate.currentUser = user;
-                [[self navigationController] popViewControllerAnimated:YES];
+                [self performSegueWithIdentifier:@"userLoginSegue" sender:sender];
             } else {
                 
             }
