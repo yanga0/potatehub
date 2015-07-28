@@ -35,10 +35,10 @@
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    [(AboutMeViewController *)[segue destinationViewController] syncUserData];
-}
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//    // Get the new view controller using [segue destinationViewController].
+//    [(AboutMeViewController *)[segue destinationViewController] syncUserData];
+//}
 
 - (IBAction)userClickLogRegButton:(id)sender {
     if ([((UIButton *)sender).titleLabel.text  isEqual: @"注册"]) {
@@ -50,7 +50,8 @@
             if (user != nil) {
                 AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
                 delegate.currentUser = user;
-                [self performSegueWithIdentifier:@"userLoginSegue" sender:sender];
+                [(AboutMeViewController *)[((UINavigationController *)self.navigationController).viewControllers objectAtIndex:0] syncUserData];
+                [self.navigationController popViewControllerAnimated:YES];
             } else {
                 
             }

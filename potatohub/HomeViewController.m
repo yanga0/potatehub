@@ -10,6 +10,7 @@
 
 @interface HomeViewController ()
 @property (weak, nonatomic) IBOutlet UIScrollView *slider;
+@property (weak, nonatomic) IBOutlet UIButton *createPostButton;
 
 @end
 
@@ -24,6 +25,12 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)createNewPostClicked:(id)sender {
+    if (sender) {
+        [self performSegueWithIdentifier:@"createNewPost" sender:sender];
+    }
 }
 
 @end

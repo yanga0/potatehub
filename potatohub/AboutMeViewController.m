@@ -20,7 +20,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.avatar setImageWithURL:[NSURL URLWithString:@"http://www.iconpng.com/png/ios7_icons/user_male.png"]];
     [self syncUserData];
 }
 
@@ -45,6 +44,8 @@
 }
 
 - (void) syncUserData {
+    NSString* defaultAvatar = @"http://www.iconpng.com/png/ios7_icons/user_male.png";
+    [self.avatar setImageWithURL:[NSURL URLWithString: defaultAvatar]];
     AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
     if (delegate.currentUser) {
         AVUser *user = delegate.currentUser;
