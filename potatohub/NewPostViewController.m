@@ -38,7 +38,7 @@
 
 - (IBAction)buttonClicked:(id)sender {
     if ([((UIButton *)sender).titleLabel.text  isEqualToString: @"取消"]) {
-//        UIApplication *app = 
+        [self.view maskView];
     }
     if ([((UIButton *)sender).titleLabel.text  isEqualToString: @"发布"]) {
     }
