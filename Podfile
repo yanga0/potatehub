@@ -5,6 +5,7 @@ target 'potatohub' do
     pod "Qiniu", "~> 7.0"
     pod "AVOSCloud"
     pod 'Toast', '~> 2.4'
+    pod "LGSublimationView"
 end
 
 target 'potatohubTests' do

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33196F671B80C78700A71A2D /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 33196F631B80C78700A71A2D /* 1.jpg */; };
+		33196F681B80C78700A71A2D /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 33196F641B80C78700A71A2D /* 2.jpg */; };
+		33196F691B80C78700A71A2D /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 33196F651B80C78700A71A2D /* 3.jpg */; };
+		33196F6A1B80C78700A71A2D /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 33196F661B80C78700A71A2D /* 4.jpg */; };
 		332982411B4BCB2D00F69E43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 332982401B4BCB2D00F69E43 /* main.m */; };
 		332982441B4BCB2D00F69E43 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 332982431B4BCB2D00F69E43 /* AppDelegate.m */; };
 		332982471B4BCB2D00F69E43 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 332982461B4BCB2D00F69E43 /* HomeViewController.m */; };
@@ -27,8 +31,6 @@
 		3369F8E41B52DF930095070A /* UserLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3369F8E31B52DF930095070A /* UserLoginViewController.m */; };
 		3369F8E71B52E3450095070A /* UserRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3369F8E61B52E3450095070A /* UserRegisterViewController.m */; };
 		3369F8E91B52EC3E0095070A /* LeanCloudTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3369F8E81B52EC3E0095070A /* LeanCloudTest.m */; };
-		33D29B301B669E9D00491357 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D29B2F1B669E9D00491357 /* Base64.m */; };
-		33D29B311B669E9D00491357 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D29B2F1B669E9D00491357 /* Base64.m */; };
 		33D29B341B66A8E100491357 /* NewPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D29B331B66A8E100491357 /* NewPostViewController.m */; };
 		33D29B351B66A8E100491357 /* NewPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D29B331B66A8E100491357 /* NewPostViewController.m */; };
 		548B46BCD2DF910EB3F7425E /* libPods-potatohubTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E58ECD2CC1ADC59851C5CF8E /* libPods-potatohubTests.a */; };
@@ -47,6 +49,10 @@
 
 /* Begin PBXFileReference section */
 		1816FD8569A7318DEB6F9FE1 /* Pods-potatohubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-potatohubTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-potatohubTests/Pods-potatohubTests.release.xcconfig"; sourceTree = "<group>"; };
+		33196F631B80C78700A71A2D /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		33196F641B80C78700A71A2D /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		33196F651B80C78700A71A2D /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		33196F661B80C78700A71A2D /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
 		3329823B1B4BCB2D00F69E43 /* potatohub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = potatohub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3329823F1B4BCB2D00F69E43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		332982401B4BCB2D00F69E43 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -76,8 +82,6 @@
 		3369F8E51B52E3450095070A /* UserRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserRegisterViewController.h; sourceTree = "<group>"; };
 		3369F8E61B52E3450095070A /* UserRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserRegisterViewController.m; sourceTree = "<group>"; };
 		3369F8E81B52EC3E0095070A /* LeanCloudTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeanCloudTest.m; sourceTree = "<group>"; };
-		33D29B2E1B669E9D00491357 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
-		33D29B2F1B669E9D00491357 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
 		33D29B321B66A8E100491357 /* NewPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewPostViewController.h; sourceTree = "<group>"; };
 		33D29B331B66A8E100491357 /* NewPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewPostViewController.m; sourceTree = "<group>"; };
 		33EF6B2D1B4E46AD00F0A995 /* AVOSCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVOSCloud.framework; path = LeanCloud/AVOSCloud.framework; sourceTree = "<group>"; };
@@ -143,8 +147,10 @@
 		3329823D1B4BCB2D00F69E43 /* potatohub */ = {
 			isa = PBXGroup;
 			children = (
-				33D29B2E1B669E9D00491357 /* Base64.h */,
-				33D29B2F1B669E9D00491357 /* Base64.m */,
+				33196F631B80C78700A71A2D /* 1.jpg */,
+				33196F641B80C78700A71A2D /* 2.jpg */,
+				33196F651B80C78700A71A2D /* 3.jpg */,
+				33196F661B80C78700A71A2D /* 4.jpg */,
 				332982421B4BCB2D00F69E43 /* AppDelegate.h */,
 				332982431B4BCB2D00F69E43 /* AppDelegate.m */,
 				332982451B4BCB2D00F69E43 /* HomeViewController.h */,
@@ -296,11 +302,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33196F671B80C78700A71A2D /* 1.jpg in Resources */,
 				334D60721B57FAAE00BE6DF3 /* Broadcast-32.png in Resources */,
 				334D60701B57FA7800BE6DF3 /* Home-32.png in Resources */,
 				334D60741B57FB4800BE6DF3 /* User Group-32.png in Resources */,
+				33196F691B80C78700A71A2D /* 3.jpg in Resources */,
 				334D607C1B5812E800BE6DF3 /* File_add-48.png in Resources */,
 				3329824D1B4BCB2D00F69E43 /* Main.storyboard in Resources */,
+				33196F681B80C78700A71A2D /* 2.jpg in Resources */,
+				33196F6A1B80C78700A71A2D /* 4.jpg in Resources */,
 				332982521B4BCB2D00F69E43 /* LaunchScreen.xib in Resources */,
 				334D606E1B57CCF200BE6DF3 /* user_male.png in Resources */,
 				334D60761B57FBE200BE6DF3 /* User-32.png in Resources */,
@@ -387,7 +397,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				33D29B341B66A8E100491357 /* NewPostViewController.m in Sources */,
-				33D29B301B669E9D00491357 /* Base64.m in Sources */,
 				3329824A1B4BCB2D00F69E43 /* GroupsViewController.m in Sources */,
 				332982441B4BCB2D00F69E43 /* AppDelegate.m in Sources */,
 				3369F8E71B52E3450095070A /* UserRegisterViewController.m in Sources */,
@@ -402,7 +411,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33D29B311B669E9D00491357 /* Base64.m in Sources */,
 				33D29B351B66A8E100491357 /* NewPostViewController.m in Sources */,
 				335FAB4D1B4E05B00042BF37 /* AboutMeViewController.m in Sources */,
 				3329825E1B4BCB2D00F69E43 /* potatohubTests.m in Sources */,

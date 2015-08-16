@@ -1,7 +1,6 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/AVOSCloud" "${PODS_ROOT}/Headers/Public/Qiniu" "${PODS_ROOT}/Headers/Public/Toast"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/AVOSCloud" "${PODS_ROOT}/Headers/Public/HappyDNS" "${PODS_ROOT}/Headers/Public/LGSublimationView" "${PODS_ROOT}/Headers/Public/Qiniu" "${PODS_ROOT}/Headers/Public/Toast"
 LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/AVOSCloud"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/AVOSCloud" -isystem "${PODS_ROOT}/Headers/Public/Qiniu" -isystem "${PODS_ROOT}/Headers/Public/Toast"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"AVOSCloud" -l"Pods-potatohub-AFNetworking" -l"Pods-potatohub-AVOSCloud" -l"Pods-potatohub-Qiniu" -l"Pods-potatohub-Toast" -l"icucore" -l"sqlite3" -l"z" -framework "CFNetwork" -framework "CoreGraphics" -framework "CoreLocation" -framework "CoreTelephony" -framework "MobileCoreServices" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration"
-OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/AVOSCloud" -isystem "${PODS_ROOT}/Headers/Public/HappyDNS" -isystem "${PODS_ROOT}/Headers/Public/LGSublimationView" -isystem "${PODS_ROOT}/Headers/Public/Qiniu" -isystem "${PODS_ROOT}/Headers/Public/Toast"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -l"AVOSCloud" -l"AVOSCloudLib" -l"HappyDNS" -l"LGSublimationView" -l"Qiniu" -l"Toast" -l"icucore" -l"resolv" -l"sqlite3" -l"z" -framework "CFNetwork" -framework "CoreGraphics" -framework "CoreLocation" -framework "CoreTelephony" -framework "MobileCoreServices" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration"
 PODS_ROOT = ${SRCROOT}/Pods

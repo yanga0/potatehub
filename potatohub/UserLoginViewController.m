@@ -8,8 +8,9 @@
 
 #import "UserLoginViewController.h"
 #import "AboutMeViewController.h"
-#import <AVUser.h>
+#import <AVOSCloud/AVUser.h>
 #import "AppDelegate.h"
+#import "Toast/UIView+Toast.h"
 
 @interface UserLoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *userName;
@@ -51,9 +52,10 @@
                 AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
                 delegate.currentUser = user;
                 [(AboutMeViewController *)[((UINavigationController *)self.navigationController).viewControllers objectAtIndex:0] syncUserData];
+                [self.view makeToast:@"登录成功，正在跳转.." duration: 1.0 position:[NSValue valueWithCGPoint:self.password.center]];
                 [self.navigationController popViewControllerAnimated:YES];
             } else {
-                
+                [self.view makeToast: error.localizedDescription duration: 2.0 position:[NSValue valueWithCGPoint:self.password.center]];
             }
         }];
     }

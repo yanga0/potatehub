@@ -7,10 +7,16 @@
 //
 
 #import "NewPostViewController.h"
+#import "Toast/UIView+Toast.h"
+#import <AVOSCloud/AVObject.h>
 
 @interface NewPostViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *cancelButton;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *publishButton;
+@property (weak, nonatomic) IBOutlet UITextField *postTitle;
+@property (weak, nonatomic) IBOutlet UITextView *postDescription;
+@property (weak, nonatomic) IBOutlet UITextField *bidStart;
+@property (weak, nonatomic) IBOutlet UISwitch *postOnlyInGroups;
 
 @end
 
@@ -38,9 +44,18 @@
 
 - (IBAction)buttonClicked:(id)sender {
     if ([((UIButton *)sender).titleLabel.text  isEqualToString: @"取消"]) {
-        [self.view maskView];
     }
     if ([((UIButton *)sender).titleLabel.text  isEqualToString: @"发布"]) {
+        AVObject *post = [AVObject objectWithClassName:@"Post"];
+        [post setObject:self.postTitle.text forKey:@"title"];
+        [post setObject:self.postDescription.text forKey:@"content"];
+        [post setObject:[NSNumber numberWithFloat:[self.bidStart.text floatValue]] forKey:@"bidStart"];
+        [post setObject:[NSMutableArray array] forKey:@"photoUrls"];
+        [post setObject:@"secondHand" forKey:@"postType"];
+        [post setObject:[NSNumber numberWithBool: self.postOnlyInGroups.enabled] forKey:@"onlyInGroups"];
+        [post save];
+        [self.view makeToast:@"发布成功！" duration:1 position: [NSValue valueWithCGPoint:self.postDescription.center]];
+//        [self.view ];
     }
 }
 

@@ -7,7 +7,8 @@
 //
 
 #import "UserRegisterViewController.h"
-#import "AVUser.h"
+#import "AboutMeViewController.h"
+#import <AVOSCloud/AVUser.h>
 #import "AppDelegate.h"
 #import <Toast/UIView+Toast.h>
 
@@ -75,7 +76,8 @@
                 if (succeeded) {
                     AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
                     delegate.currentUser = newUser;
-                    //TODO: go to about me controller
+                    [(AboutMeViewController *)[((UINavigationController *)self.navigationController).viewControllers objectAtIndex:0] syncUserData];
+                    [self.view makeToast:@"注册成功，正在登录.." duration: 1.0 position:[NSValue valueWithCGPoint:self.password.center]];
                     [self.navigationController popToRootViewControllerAnimated:YES];
                 } else {
                     [self.view makeToast:error.localizedDescription duration: 2.0 position:[NSValue valueWithCGPoint:self.password.center]];
